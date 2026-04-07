@@ -9,7 +9,7 @@ export function middleware(request: NextRequest) {
   console.log("Middleware running", request.nextUrl.pathname);
 
   if (isDashboard && !token) {
-    return NextResponse.redirect(new URL("/sign-in", request.url));
+    return NextResponse.redirect(new URL("/", request.url));
   }
 
   return NextResponse.next();

@@ -15,7 +15,7 @@ const HomePage = () => {
     const hasToken = document.cookie.includes("token");
 
     if (!hasToken) {
-      router.push("/sign-in");
+      router.push("/");
     }
   }, []);
   

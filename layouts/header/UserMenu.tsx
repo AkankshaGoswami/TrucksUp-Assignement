@@ -27,7 +27,7 @@ const UserMenu = () => {
   const handleLogout = () => {
     document.cookie = "token=; path=/; max-age=0";
     localStorage.removeItem("username");
-    router.push("/sign-in");
+    router.push("/");
   };
 
   const username=localStorage.getItem("username");
